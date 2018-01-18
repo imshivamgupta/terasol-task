@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Images</title>
+    <style>
+        /* Style are overrided by this */
+        
+        img {
+            width: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Image Tag -->
+    <img src="http://saibroking.com/assets/upload/property_image/300(1).png" alt="">
+
+    <!-- Alt Attribute -->
+    <img src="http://saibroking.com/assets/upload/property_image/300(1).png" alt="Dummy image">
+
+    <!-- Width & height Attributes -->
+    <img src="http://saibroking.com/assets/upload/property_image/300(1).png" alt="dummy image" width="300" height="300">
+
+    <!-- Image as Link -->
+    <a href="//www.google.com"><img src="http://saibroking.com/assets/upload/property_image/300(1).png" alt="dummy image"></a>
+
+    <!-- Picture Element -->
+    <picture>
+        <source media="(min-width:600px)" srcset="http://saibroking.com/assets/upload/property_image/300(1).png">
+        <img src="http://saibroking.com/assets/upload/property_image/300(1).png" alt="dummy image" style="width: auto;">
+    </picture>
+</body>
+
+</html>
