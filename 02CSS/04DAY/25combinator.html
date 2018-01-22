@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Selector</title>
+    <style>
+        div~p {
+            color: brown;
+            font-weight: 800;
+            font-family: sans;
+            font-variant: small-caps;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, ut.
+        </p>
+        <span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, corporis?</p>
+        </span>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, ipsam.</p>
+</body>
+
+</html>

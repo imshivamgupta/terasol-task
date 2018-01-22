@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS-form</title>
+    <style>
+        input {
+            width: 80%;
+            height: 2em;
+            margin: 5px 10px;
+            border: 2px solid dodgerblue;
+            border-radius: 5px;
+        }
+        
+        label {
+            display: block;
+        }
+        
+        label:first-letter {
+            color: red;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <label for="name">Name</label><br>
+        <input type="text" placeholder="Enter Your name" id="name"><br>
+        <br>
+        <label for="num">Contact</label><br>
+        <input type="number" placeholder="Enter Your name" id="num">
+        <br>
+        <br>
+        <label for="mail">Email</label><br>
+        <input type="email" placeholder="Enter Your name" id="mail">
+    </form>
+</body>
+
+</html>

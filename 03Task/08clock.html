@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .analog-clock {
+            width: 280px;
+            height: 280px;
+            margin: auto;
+        }
+        
+        #clock-face {
+            stroke: black;
+            stroke-width: 2px;
+            fill: white;
+        }
+        
+        #h-hand,
+        #m-hand,
+        #s-hand {
+            stroke: black;
+            stroke-linecap: round;
+        }
+        
+        #h-hand {
+            stroke-width: 3px;
+        }
+        
+        #m-hand {
+            stroke-width: 1px;
+        }
+        
+        #s-hand {
+            stroke-width: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="analog-clock">
+        <svg width="280" height="280">
+            <circle id="clock-face" cx="140" cy="140" r="130" />
+            <!-- first -->
+            <circle id="clock-face" cx="140" cy="40" r="15" />
+            <text x="130" y="45">12</text>
+            <circle id="clock-face" cx="140" cy="240" r="15" />
+            <text x="135" y="245">6</text>
+            <!-- end -->
+            <!-- second -->
+            <circle id="clock-face" cx="240" cy="140" r="15" />
+            <text x="235" y="145">3</text>
+            <circle id="clock-face" cx="40" cy="140" r="15" />
+            <text x="35" y="145">9</text>
+            <!-- end -->
+            <!-- third -->
+            <circle id="clock-face" cx="230" cy="90" r="15" />
+            <text x="225" y="95">2</text>
+            <circle id="clock-face" cx="50" cy="190" r="15" />
+            <text x="45" y="195">8</text>
+            <!-- end -->
+            <!-- fourth -->
+            <circle id="clock-face" cx="90" cy="230" r="15" />
+            <text x="85" y="235">7</text>
+            <circle id="clock-face" cx="190" cy="50" r="15" />
+            <text x="185" y="55">1</text>
+            <!-- end -->
+            <!-- fifth -->
+            <circle id="clock-face" cx="50" cy="90" r="15" />
+            <text x="40" y="95">10</text>
+            <circle id="clock-face" cx="230" cy="190" r="15" />
+            <text x="225" y="195">4</text>
+            <!-- end -->
+            <!-- sixth -->
+            <circle id="clock-face" cx="90" cy="50" r="15" />
+            <text x="80" y="55">11</text>
+            <circle id="clock-face" cx="190" cy="230" r="15" />
+            <text x="185" y="235">5</text>
+            <!-- end -->
+            <line id="h-hand" x1="140" y1="140" x2="100" y2="110" />
+            <line id="m-hand" x1="140" y1="140" x2="100" y2="80" />
+            <line id="s-hand" x1="140" y1="140" x2="180" y2="80" />
+        </svg>
+    </div>
+</body>
+
+</html>

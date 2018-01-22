@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Dropdown</title>
+    <style>
+        .outer {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .inner {
+            position: absolute;
+            display: none;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+            /* z-index: 1; */
+        }
+        
+        .outer:hover .inner {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <p>
+            Hover this..
+
+        </p>
+        <div class="inner">
+            <p>
+                Secret Message!!
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
