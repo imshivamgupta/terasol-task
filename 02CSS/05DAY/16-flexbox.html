@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Flexbox</title>
+    <style>
+        .container>div {
+            border: 1px solid #ffff00;
+            flex-basis: 30%;
+            padding: 0 10px;
+            background-color: powderblue;
+        }
+        
+        @media screen and (min-width:400px) {
+            .container {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        
+        @media screen and (max-width:360px) {
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sequi minima excepturi aspernatur doloremque explicabo rem ipsa repudiandae at libero, dicta voluptate qui fugit voluptates totam magni ipsum velit ex!</p>
+        </div>
+        <div class="box1">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero sit earum corporis eaque alias aperiam, quo minus laudantium quaerat, laborum tenetur laboriosam dolore velit quae molestias temporibus at, sed maiores!
+            </p>
+        </div>
+        <div class="box2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla saepe ratione veniam dolorum recusandae id nesciunt officia est harum nisi! Laborum officia reiciendis sequi aut tempore rerum ullam eum porro!
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
