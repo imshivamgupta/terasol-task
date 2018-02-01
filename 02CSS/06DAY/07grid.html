@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Grid</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1em;
+            grid-auto-rows: minmax(100px, auto);
+        }
+        
+        .wrapper>.grid {
+            border: 1px solid #333;
+            padding: 1em;
+        }
+        
+        .grid:nth-child(odd) {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="grid">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, deserunt.
+        </div>
+        <div class="grid">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, deserunt.
+        </div>
+        <div class="grid">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, deserunt.
+        </div>
+        <div class="grid">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, deserunt.
+        </div>
+        <div class="grid">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, deserunt.
+        </div>
+        <div class="grid">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, deserunt.
+        </div>
+        <div class="grid">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, deserunt.
+        </div>
+        <div class="grid">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, deserunt.
+        </div>
+        <div class="grid">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, deserunt.
+        </div>
+        <div class="grid">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, deserunt.
+        </div>
+        <div class="grid">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, deserunt.
+        </div>
+        <div class="grid">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, deserunt.
+        </div>
+    </div>
+</body>
+
+</html>

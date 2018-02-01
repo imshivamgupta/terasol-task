@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            display: flex;
+            /* flex-direction: row; */
+            /* flex-flow: row wrap; */
+            flex-wrap: wrap;
+            justify-content: space-between;
+            /* align-items: space-between; */
+        }
+        
+        .container>div {
+            border: 1px solid #808080;
+            flex-basis: 300px;
+            padding: .5em;
+            margin: .5em 0;
+        }
+        
+        .container>div:nth-child(even) {
+            background: #9c9c9c;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box-1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum in tenetur nihil enim? Corrupti nihil delectus possimus eaque dolores aspernatur doloremque facere tenetur eveniet quaerat necessitatibus, fugiat cupiditate quibusdam asperiores!</p>
+        </div>
+        <div class="box-2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum in tenetur nihil enim? Corrupti nihil delectus possimus eaque dolores aspernatur doloremque facere tenetur eveniet quaerat necessitatibus, fugiat cupiditate quibusdam asperiores!</p>
+        </div>
+        <div class="box-3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum in tenetur nihil enim? Corrupti nihil delectus possimus eaque dolores aspernatur doloremque facere tenetur eveniet quaerat necessitatibus, fugiat cupiditate quibusdam asperiores!</p>
+        </div>
+        <div class="box-1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum in tenetur nihil enim? Corrupti nihil delectus possimus eaque dolores aspernatur doloremque facere tenetur eveniet quaerat necessitatibus, fugiat cupiditate quibusdam asperiores!</p>
+        </div>
+        <div class="box-2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum in tenetur nihil enim? Corrupti nihil delectus possimus eaque dolores aspernatur doloremque facere tenetur eveniet quaerat necessitatibus, fugiat cupiditate quibusdam asperiores!</p>
+        </div>
+        <div class="box-3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum in tenetur nihil enim? Corrupti nihil delectus possimus eaque dolores aspernatur doloremque facere tenetur eveniet quaerat necessitatibus, fugiat cupiditate quibusdam asperiores!</p>
+        </div>
+        <div class="box-1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum in tenetur nihil enim? Corrupti nihil delectus possimus eaque dolores aspernatur doloremque facere tenetur eveniet quaerat necessitatibus, fugiat cupiditate quibusdam asperiores!</p>
+        </div>
+        <div class="box-2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum in tenetur nihil enim? Corrupti nihil delectus possimus eaque dolores aspernatur doloremque facere tenetur eveniet quaerat necessitatibus, fugiat cupiditate quibusdam asperiores!</p>
+        </div>
+        <div class="box-3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum in tenetur nihil enim? Corrupti nihil delectus possimus eaque dolores aspernatur doloremque facere tenetur eveniet quaerat necessitatibus, fugiat cupiditate quibusdam asperiores!</p>
+        </div>
+    </div>
+</body>
+
+</html>

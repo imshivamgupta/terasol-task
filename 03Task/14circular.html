@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-Circular</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+        html {
+            font-size: 3em;
+            font-family: 'Lato', sans-serif;
+        }
+        
+         :root {
+            --text-color: #333333;
+        }
+        
+        .wrapper {
+            width: 600px;
+            height: 560px;
+            padding: 0.5em;
+            margin: auto;
+            border: 2px solid #e5e5e5;
+        }
+        
+        .page-title {
+            font-size: .4em;
+            color: var(--text-color);
+        }
+        
+        .circular {
+            width: 300px;
+            position: relative;
+            margin: auto;
+        }
+        
+        .page-value {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #333333;
+            line-height: 0.5;
+        }
+        
+        span {
+            font-size: 20px;
+            color: #8b8b8b;
+        }
+        
+        span::before {
+            content: '\A';
+            white-space: pre;
+        }
+        
+        ul {
+            list-style-type: none;
+            font-size: 0.3em;
+            padding: 0;
+        }
+        
+        li {
+            display: flex;
+            padding: 0.3em;
+        }
+        
+        .tab {
+            width: 15px;
+            height: 15px;
+            align-self: center;
+            margin-right: 1em;
+            border-radius: 5px;
+        }
+        
+        li .one {
+            background-color: #1baf8b;
+        }
+        
+        li .two {
+            background-color: #ff8118;
+        }
+        
+        li .three {
+            background-color: #a471e8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="page-title">
+            <p>Page visits</p>
+        </div>
+        <div class="circular">
+            <svg height="300" width="300" id="svg">
+                <circle id="progressbg" cx="150" cy="150" r="120" stroke-width="20" fill="transparent" stroke-dasharray="753.9822368615503"></circle>
+                <circle id="progress" cx="150" cy="150" r="120" stroke-width="20" fill="transparent" stroke-dasharray="753.9822368615503" style="stroke-dashoffset: 0px; stroke: #1baf8b;"></circle>
+                <circle id="progress" cx="150" cy="150" r="120" stroke-width="20" fill="transparent" stroke-dasharray="753.9822368615503" style="stroke-dashoffset: 236.991px; stroke: #a471e8;"></circle>
+                <circle id="progress" cx="150" cy="150" r="120" stroke-width="20" fill="transparent" stroke-dasharray="753.9822368615503" style="stroke-dashoffset: 376.991px; stroke: #ff8118;"></circle>
+            </svg>
+            <div class="page-value">
+                <p>15<span>Visits</span></p>
+            </div>
+        </div>
+        <div class="list-items">
+            <ul>
+                <li>
+                    <div class="tab one"></div> 7 Reservations</li>
+                <li>
+                    <div class="tab two"></div> 1 cancellations</li>
+                <li>
+                    <div class="tab three"></div> 6 Walkins</li>
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

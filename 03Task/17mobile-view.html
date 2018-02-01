@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mobile View</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <style>
+        html {
+            font-family: 'Lato', sans-serif;
+            font-size: 12px;
+            font-weight: 300;
+        }
+        
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .pd-std {
+            padding: 1.5em 1em;
+        }
+        
+        .wrapper {
+            background-image: url('bg.jpg');
+            background-size: 100% 100%;
+        }
+        
+        .login-box {
+            position: relative;
+            height: 100vh;
+            background: linear-gradient(to bottom, rgba(146, 135, 187, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
+            max-width: 360px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            position: absolute;
+            left: 50%;
+            top: 25%;
+            width: 14em;
+            height: 2.8em;
+            background: #fff;
+            transform-origin: 0 100%;
+            transform: rotate(-45deg) translate(-15%, -50%);
+            border-radius: 0 3px 3px 0;
+        }
+        
+        .logo::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 100%;
+            width: 2.8em;
+            height: 5.2em;
+            background: #fff;
+            box-shadow: inset -0.2rem -2rem 2rem rgba(0, 0, 0, 0.2);
+            border-radius: 3px 3px 0 0;
+        }
+        
+        .login-form {
+            position: absolute;
+            padding: 1em;
+            width: 100%;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .login-input-row {
+            height: 5em;
+            padding-top: 1em;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .login-input {
+            height: 100%;
+            width: 90%;
+            padding-left: 1rem;
+            display: inline-block;
+            font-size: 1.5rem;
+            background: transparent;
+            color: rgb(253, 252, 253);
+        }
+        
+        .submit {
+            position: relative;
+            width: 100%;
+            height: 4rem;
+            margin: 4rem 0 2rem 0rem;
+            color: rgb(252, 249, 250);
+            background: #FF3366;
+            font-size: 1.5rem;
+            border-radius: 3rem;
+            cursor: pointer;
+            overflow: hidden;
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+        }
+        
+        .submit:hover {
+            border: 2px solid rgb(253, 47, 98);
+            background: transparent;
+            transition: background ease-out;
+        }
+        
+        .signup {
+            font-size: 1.2rem;
+            color: rgb(166, 163, 168);
+            text-align: center;
+        }
+        
+        .signup a {
+            color: #fff;
+            cursor: pointer;
+        }
+        
+         ::-webkit-input-placeholder {
+            color: #fff;
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+            font-size: 18px;
+        }
+        
+        input,
+        button {
+            cursor: pointer;
+            outline: none;
+            border: none;
+        }
+        
+        svg {
+            display: inline-block;
+            width: 1rem;
+            height: 1rem;
+            overflow: visible;
+        }
+        
+        .svg-icon path {
+            stroke: rgba(255, 255, 255, 0.9);
+            fill: none;
+            stroke-width: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper pd-std">
+        <div class="login-box pd-std">
+            <div class="logo"></div>
+            <div class="login-form">
+                <div class="login-input-row">
+                    <svg class="login__icon name svg-icon" viewBox="0 0 20 20">
+                        <path d="M0,20 a10,8 0 0,1 20,0z M10,0 a4,4 0 0,1 0,8 a4,4 0 0,1 0,-8" />
+                    </svg>
+                    <input type="text" class="login-input" placeholder="Username">
+                </div>
+                <div class="login-input-row">
+                    <svg class="login__icon pass svg-icon" viewBox="0 0 20 20">
+                        <path d="M0,20 20,20 20,8 0,8z M10,13 10,16z M4,8 a6,8 0 0,1 12,0" />
+                    </svg>
+                    <input type="password" class="login-input" placeholder="Password">
+                </div>
+                <button class="submit">
+                    Sign In
+                </button>
+                <p class="signup">Don't have an account? &nbsp;<a>Sign up</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

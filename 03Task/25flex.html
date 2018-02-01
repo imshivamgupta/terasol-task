@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 100vh;
+        }
+        
+        .container>div {
+            flex-basis: 30%;
+            line-height: 3;
+            font-size: 2em;
+            color: #ffffff;
+            background: dodgerblue;
+            text-align: center;
+            border-radius: 2em;
+        }
+        
+        .box-1 {
+            align-self: flex-end;
+        }
+        
+        .box-2 {
+            align-self: flex-start;
+        }
+        
+        .box-3 {
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box-1">1</div>
+        <div class="box-2">2</div>
+        <div class="box-3">3</div>
+    </div>
+</body>
+
+</html>
